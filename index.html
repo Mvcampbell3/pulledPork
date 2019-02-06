@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slow vs. Instant</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Epic Cooking Battles of History</h1>
+        <h2>Smoker Vs Instant Pot</h1>
+    </header>
+
+    <div id="vote"class="container">
+        <div class="section">
+            <div class="top">
+                <h3>What is at <del>steak</del> stake?</h3>
+                <p>Since the dawn of the instant-pot, there has been a contest between the slow and low's and the
+                    real-time chow-times.<br> Which delivers the better product? Which delivers the most utility?</p>
+                <p>We are gathered here today to resolve this public discourse once and for all.</p>
+            </div>
+            <div class="motion">
+                <h3>The Motion:</h3>
+                <p>Whereas the best cooking instrument is forever known as the smoker and</p>
+                <p>Whereas the best producement of that instrument is known as pulled pork and</p>
+                <p>Whereas the instant-pot shall forever be known as a lazy-persons crutch</p>
+                <p>It is then resolved that king of the cookers is the Smoker. All hail the king baby.</p>
+            </div>
+            <div class="buttonArea">
+                <button class="vote" id="yay" data-vote="Yay">Yay (smoker wins)</button>
+                <button class="vote" id="nay" data-vote="Nay">Nay (instant-pot wins)</button>
+            </div>
+            <div class="outputArea">
+                <h3>Those in favor of the motion: <span id="yayNum">0</span></h3>
+                <h3>Those against of the motion: <span id="nayNum">0</span></h3>
+                <h3><span id="winner">Winner</span> is winning the contest</h3>
+            </div>
+        </div>
+    </div>
+
+    <div id="log" class="container">
+        <form action="submit">
+            <label for="email">Email:</label><br>
+            <input type="text" name="email" id="email"><br>
+            <label for="email">Password:</label><br>
+            <input type="text" name="password" id="password"><br>
+            <button id="subBtn" type="submit">Submit</button>
+            
+        </form>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- Firebase App is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-app.js"></script>
+
+    <!-- Add additional services that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-database.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
